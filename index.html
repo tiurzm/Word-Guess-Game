@@ -9,14 +9,14 @@
 </head>
 <body>
 <div class="container">
-    <section id="firstcol">
+    <section class="firstcol">
     </section>
 
-    <section id="secondcol">
-        <p>PRESS ANY KEY TO GET STARTED!</p>
+    <section class="secondcol">
+        <p>PRESS ANY KEY TO GET STARTED!<span id="song"></span></p>
         <p>WINS <span id="wins">0</span></p>
-        <p>CURRENT WORD <span id="word"></span></p>
-        <p>NUMBER OF GUESSES REMAINING <span id="gusses">10</span></p>
+        <p>CURRENT WORD <span id="word"> _ _ _ _ _</span></p>
+        <p>NUMBER OF GUESSES REMAINING <span id="guesses">12</span></p>
         <p>LETTERS ALREADY GUESSED <span id="letters"></span></p>
     </section>
     <script text="text/javascript" src="./assets/javascript/game.js">
@@ -31,9 +31,6 @@ if we don't have, number of guesses decrement and append the letter to id letter
 if we press the same lettters twice, the number of guesses doesn't change (it stays)
 3. when we win, reset all the display, show a piture of the song, play the song and text h1 updated with song title
 4. when we lose, reset all the display and you can play again
-
-
-
 -->
     
 </body>
