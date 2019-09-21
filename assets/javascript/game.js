@@ -15,18 +15,29 @@ var currentWord = document.getElementById("word");
 currentWord.textContent = underScore.join(" ");
 
 
+// function allGame() {
+//     game();
+//     if ()
+//     winScore++;
+//     userWins.textContent = winScore;
+// }
+
+
+
 // GAME
 var letterGuess = document.getElementById("letters");
 var remainNum = document.getElementById("guesses"); 
 var userWins = document.getElementById("wins");
-var currWord = [];
 var alLetter = [];
 var numGuess = 12;
 var winScore = 0;
 
+
+
 // get user guess
-document.onkeyup = function(event) {
-    var userPress = event.key;
+document.onkeyup = game; 
+function game() {
+var userPress = event.key.toLowerCase();
     if (aSong.indexOf(userPress) > -1) {
         for(var i = 0; i < aSong.length; i++) {
            if(aSong[i] === userPress){
@@ -36,17 +47,12 @@ document.onkeyup = function(event) {
            }
         }
                 
-        
     } else {
         alLetter.push(userPress);
-        numGuess--;
+        --numGuess;
         remainNum.textContent = numGuess;
         letterGuess.textContent = alLetter + ",";
         console.log(alLetter);
         console.log(numGuess);
     }
-};
-
-
-// winScore++;
-// userWins.textContent = winScore;
+}; 
