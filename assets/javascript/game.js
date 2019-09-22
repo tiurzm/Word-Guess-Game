@@ -1,11 +1,11 @@
 // create an array of the songs and choose a song randomly
-var animeSongs = ["dragonball", "inuyasha", "pokemon", "hunterxhunter", "sailormoon", "onepiece", "gundam", "digimon"];
+var animeList = ["dragonball", "inuyasha", "pokemon", "hunterxhunter", "sailormoon", "onepiece", "gundam", "digimon"];
 
-var aSong = animeSongs[Math.floor(Math.random() * animeSongs.length)];
+var aNime = animeList[Math.floor(Math.random() * animeList.length)];
 
 // create underscores based on the length of songs
 var underScore = [];
-for(var i = 0; i < aSong.length; i++){
+for(var i = 0; i < aNime.length; i++){
     underScore.push("_");
 }; 
 
@@ -21,14 +21,13 @@ var alLetter = [];
 var numGuess = 12;
 var winScore = 0;
 
-
 // get user guess
 document.onkeyup = game; 
 function game() {
 var userPress = event.key.toLowerCase();
-    if (aSong.indexOf(userPress) > -1) {
-        for(var i = 0; i < aSong.length; i++) {
-           if(aSong[i] === userPress){
+    if (aNime.indexOf(userPress) > -1) {
+        for(var i = 0; i < aNime.length; i++) {
+           if(aNime[i] === userPress){
             underScore[i] = userPress;
             currentWord.textContent = underScore.join(" ");
            };
@@ -44,29 +43,24 @@ var userPress = event.key.toLowerCase();
             console.log(numGuess);
         };
     };
-
 if(!underScore.includes("_")){
         winScore++;
         userWins.textContent = winScore;
         reset();
     };
-
-
 if(numGuess === 0) {
-    alert("you lose");
+    alert("You lose");
     return reset();
     };
 }; 
-
-
 
 // reset game
 function reset(){
     numGuess = 12 ;
     remainNum.textContent = 12; 
-    aSong = animeSongs[Math.floor(Math.random() * animeSongs.length)];
+    aNime = animeList[Math.floor(Math.random() * animeList.length)];
     underScore = [];
-    for(var i = 0; i < aSong.length; i++){
+    for(var i = 0; i < aNime.length; i++){
         underScore.push("_");
     }; 
     currentWord.textContent = underScore.join(" ");
