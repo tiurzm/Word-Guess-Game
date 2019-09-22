@@ -1,5 +1,36 @@
+html { 
+    background: url(../images/back.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 body {
-    
     font-size: 20px;
+    color: #ffffff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto;
+    border: 3px solid #ffffff;
+    overflow: auto;
+
+}
+
+.left {
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+.right {
+    float: left;
+    margin: 10px;
+    padding: 10px;
 }
