@@ -1,5 +1,5 @@
 // create an array of the songs and choose a song randomly
-var animeList = ["dragonball", "inuyasha", "pokemon", "hunterxhunter", "sailormoon", "onepiece", "gundam", "digimon"];
+var animeList = ["dragonball", "inuyasha", "pokemon", "hunterxhunter", "sailormoon", "onepiece", "gundam", "digimon", "naruto", "bleach", "berserk"];
 
 var aNime = animeList[Math.floor(Math.random() * animeList.length)];
 
