@@ -1,6 +1,6 @@
 # Word Guess Game - 90's Anime
 
-This is a Word Guess Game - 90's Anime, built using HTML, CSS and javaScript. 
+This is a Word Guess Game - 90's Anime application, built using HTML, CSS and javaScript. 
 
 How to play:
 
