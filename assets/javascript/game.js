@@ -34,14 +34,14 @@ var userPress = event.key.toLowerCase();
         };     
         
     } else {
-        if (alLetter.indexOf(userPress) === -1) {
+        // if (alLetter.indexOf(userPress) === -1) {
             alLetter.push(userPress);
             numGuess--;
             remainNum.textContent = numGuess;
             letterGuess.textContent = alLetter + ",";
             console.log(alLetter);
             console.log(numGuess);
-        };
+        // };
     };
 if(!underScore.includes("_")){
         winScore++;
