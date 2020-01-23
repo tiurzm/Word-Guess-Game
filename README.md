@@ -4,7 +4,7 @@ This is a Word Guess Game - 90's Anime application, built using HTML, CSS and ja
 
 ![Home Page](./assets/images/wd.png)
 
-How to play:
+## How to play:
 
 1. Click https://tiurzm.github.io/Word-Guess-Game/. 
 2. Press any key to get started.
